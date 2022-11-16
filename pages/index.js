@@ -4,23 +4,23 @@ export default function Home() {
   return (
     <>
 {/* Login */}
-<div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100">
+<div className="flex flex-col items-center justify-center min-h-screen py-2 bg-[#252A34]">
 <Head>
   <title>Login Health</title>
   <link rel="icon" href="../public/favicon.ico" />
 </Head>
-<main className="flex flex-col justify-center items-stretch w-full flex-1 px-20 text-center mb-40 ml-20">
-<div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
+<main className="flex flex-col justify-center items-center w-full flex-1 px-20 text-center">
+<div className="bg-[#393E46] rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
 <div className="w-3/5 p-5">
 {/* Sign In  */}
 <div className="text-left font-bold">
-<span className="text-green-500">Company</span> Name
+<span className="text-[#FFC7C7]">NIGHT</span> RAID
 </div>
 <div className="py-28 px-12">
-  <h2 className="text-3xl font-bold text-green-500 mb-2">
-    Sign in to account
+  <h2 className="text-3xl font-bold text-[#FFC7C7] mb-2">
+    Connect to patient account
   </h2>
-  <div className="border-2 w-10 border-green-500 inline-block mb-10"></div>
+  <div className="border-2 w-10 border-[#FFC7C7] inline-block mb-10"></div>
   <div className="flex flex-col items-center">
   <div className="bg-gray-100 w-64 p-2 rounded-xl">
   <input  className="bg-gray-100 rounded-md"type="email" name="email" placeholder="Enter your ID">
@@ -30,24 +30,24 @@ export default function Home() {
 <input  className="bg-gray-100 rounded-md"type="password" name="password" placeholder="Enter your Password">
 </input>
 </div>
-<a href="#" className="border-2 border-green-500 rounded-full text-green-500 px-12 py-2 inline-block mt-10 font-semibold hover:bg-green-500 hover:text-white">SIGN IN</a>
+<a href="#" className="border-2 border-[#FFC7C7] rounded-full text-[#FFC7C7] px-12 py-2 inline-block mt-10 font-semibold hover:bg-[#FFC7C7] hover:text-black">Connect</a>
 
   </div>
 </div>
 </div>
-<div className="w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
+<div className="w-2/5 bg-[#FF2E63] text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
 {/* About */}
 <h2 className="text-3xl font-bold mb-2">
-Hello Friends 
+HOSPITAL  
 </h2>
 <div className="border-2 w-10 border-white inline-block mb-2"></div>
-<p className="mb-10">Enter your transaction ID so as to open the records
+<div className="mb-10">Enter your hospital ID so as to open the records
 <div className="bg-gray-100 w-64 p-2 rounded-xl mt-6">
   <input  className="bg-gray-100 rounded-md "type="email" name="email" placeholder="Enter your ID">
 </input>
 </div>
-<a href="#" className="border-2 border-white rounded-full px-12 py-2 inline-block mt-10 font-semibold hover:bg-white hover:text-green-500">SIGN UP</a>
-</p>
+<a href="#" className="border-2 border-white rounded-full px-12 py-2 inline-block mt-10 font-semibold hover:bg-white hover:text-black">Connect</a>
+</div>
 </div>
 
 
