@@ -13,6 +13,7 @@ export default function Home() {
   const [correctNetwork, setCorrectNetwork] = useState(false);
   const [currentAccount, setCurrentAccount] = useState('');
   const onConnect = async() =>{
+    console.log("prithviraj");
     try{
 
       const {ethereum } = window;
@@ -31,7 +32,7 @@ export default function Home() {
       else{
         setCorrectNetwork(true);
         console.log("connected ");
-        setUserLogged(true);
+
       }
     }
     catch(error){
@@ -39,6 +40,7 @@ export default function Home() {
     }
 
     const accounts = await ethereum.request({method : 'eth_requestAccounts'});
+    // setCurrentAccount(accounts[0]);
   }
 
   const onDisconnect = () =>{
@@ -50,8 +52,8 @@ export default function Home() {
 {/* Login */}
 <div>
   {
-    !isUserLogged ? <Login onConnect={onConnect}/> : isUserLogged ? <Homes/> : <h1>error</h1>
-  }
+    !isUserLogged ? <Login onConnect={onConnect}/> :  isUserLogged ? <Homes/> : <h1>there is an error</h1>
+  },
 </div>
     
 

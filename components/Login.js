@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hospital from "./Hospital";
 
 
 
@@ -27,14 +28,14 @@ function Login({onConnect}) {
           </h2>
           <div className="border-2 w-10 border-[#FFC7C7] inline-block mb-10"></div>
           <div className="flex flex-col items-center">
-          <div className="bg-gray-100 w-64 p-2 rounded-xl">
+          {/* <div className="bg-gray-100 w-64 p-2 rounded-xl">
           <input  className="bg-gray-100 rounded-md"type="email" name="email" placeholder="Enter your ID">
         </input>
         </div>
         <div className="bg-gray-100 w-64 p-2 rounded-xl mt-10">
         <input  className="bg-gray-100 rounded-md"type="password" name="password" placeholder="Enter your Password">
         </input>
-        </div>
+        </div> */}
         <button onClick={onConnect} className="border-2 border-[#FFC7C7] rounded-full text-[#FFC7C7] px-12 py-2 inline-block mt-10 font-semibold hover:bg-[#FFC7C7] hover:text-black">Connect</button>
         
           </div>
@@ -47,11 +48,11 @@ function Login({onConnect}) {
         </h2>
         <div className="border-2 w-10 border-white inline-block mb-2"></div>
         <div className="mb-10">Enter your hospital ID so as to open the records
-        <div className="bg-gray-100 w-64 p-2 rounded-xl mt-6">
+        {/* <div className="bg-gray-100 w-64 p-2 rounded-xl mt-6">
           <input  className="bg-gray-100 rounded-md "type="email" name="email" placeholder="Enter your ID">
         </input>
-        </div>
-        <a href="#" className="border-2 border-white rounded-full px-12 py-2 inline-block mt-10 font-semibold hover:bg-white hover:text-black">Connect</a>
+        </div> */}
+        <button  onClick={onConnect} className="border-2 border-white rounded-full px-12 py-2 inline-block mt-10 font-semibold hover:bg-white hover:text-black">Connect</button>
         </div>
         </div>
         
